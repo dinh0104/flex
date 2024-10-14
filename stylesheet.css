@@ -34,6 +34,47 @@ body {
         p {
             text-align: justify;
             text-justify: inter-word;
+
+        }
+
+        img {
+            width: 100%;
+            border-radius: 1rem;
+        }
+
+        svg {
+            width: 100px;
+            height: 100px;
+            color: green;
+
+            &:hover {
+                color: red;
+            }
+        }
+
+        .floated {
+            width: 50%;
+
+            &.right {
+                float: right;
+                margin-left: 1rem;
+
+                &.left {
+                    float: left;
+                    margin-right: 1rem;
+                }
+            }
+
+            .floated-bg {
+                border-radius: 1rem;
+                border: 1px solid blue;
+                min-height: 100px;
+                background-image: url("img_nature_wide.jpg");
+                color: white;
+                font-size: 2rem;
+                padding: 1rem;
+                background-size: cover;
+            }
         }
     }
 
